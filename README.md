@@ -8,8 +8,8 @@ Swift Version For LSAlertController
 ### Examples【示例】
 
 ```
- let alert = LSAlertController.init(title:"我是标题", message: "我是详细标题，可以多行", preferredStyle: .alert)
-        let confirmAction = LSAlertAction.init(title: "确认", textColor: UIColor.red) { action in
+       let alert = LSAlertController.init(title:"我是标题", message: "我是详细标题，可以多行", preferredStyle: .alert)
+       let confirmAction = LSAlertAction.init(title: "确认", textColor: UIColor.red) { action in
             print("确认")
         }
         let cancelAction = LSAlertAction.init(title: "取消", textColor: UIColor.green) { action in
