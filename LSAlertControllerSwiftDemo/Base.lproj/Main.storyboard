@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2tL-Na-K2s">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hMm-V2-xLt">
+            <objects>
+                <viewController id="2tL-Na-K2s" customClass="ViewController" customModule="LSAlertControllerSwiftDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lX4-9C-D1t"/>
+                        <viewControllerLayoutGuide type="bottom" id="fec-ui-N0e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ju-Q7-bdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4z-ap-CNq">
+                                <rect key="frame" x="46" y="60" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.54772914949999996" green="1" blue="0.94791758280000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aw6-Dx-meL"/>
+                                </constraints>
+                                <state key="normal" title="AlertStyle">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AlertStyle:" destination="2tL-Na-K2s" eventType="touchUpInside" id="eoz-tc-gYP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DK-6s-9zj">
+                                <rect key="frame" x="46" y="130" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.54772914949999996" green="1" blue="0.94791758280000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M79-if-Qj3"/>
+                                </constraints>
+                                <state key="normal" title="AlertStyleWithTextField">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AlertStyleWithTextField:" destination="2tL-Na-K2s" eventType="touchUpInside" id="yx1-jL-zAG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxj-s4-IgR">
+                                <rect key="frame" x="46" y="200" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.54772914949999996" green="1" blue="0.94791758280000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AYj-ZE-Nh1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="U3u-pe-x3D"/>
+                                </constraints>
+                                <state key="normal" title="AlertStyleWithVerticalButtons">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AlertStyleWithVerticalButtons:" destination="2tL-Na-K2s" eventType="touchUpInside" id="FMr-MP-bzI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPV-J2-Hzt">
+                                <rect key="frame" x="46" y="270" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.54772914949999996" green="1" blue="0.94791758280000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HWE-gM-zqi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ucz-BD-kon"/>
+                                </constraints>
+                                <state key="normal" title="AcitonSheet">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AcitonSheet:" destination="2tL-Na-K2s" eventType="touchUpInside" id="8QR-6j-5P3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQL-r9-nTg">
+                                <rect key="frame" x="46" y="340" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.54772914949999996" green="1" blue="0.94791758280000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GjT-yW-A91"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="yhj-Je-w2R"/>
+                                </constraints>
+                                <state key="normal" title="AcitonSheetWithTitle">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AcitonSheetWithTitle:" destination="2tL-Na-K2s" eventType="touchUpInside" id="SrE-VN-3MP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yl-1s-WSD">
+                                <rect key="frame" x="46" y="410" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.54772914949999996" green="1" blue="0.94791758280000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4lg-Y1-mR5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="N3v-ha-elw"/>
+                                </constraints>
+                                <state key="normal" title="AcitonSheetWithSubtitle">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AcitonSheetWithSubtitle:" destination="2tL-Na-K2s" eventType="touchUpInside" id="Fwa-Gv-RKU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W4z-ap-CNq" firstAttribute="top" secondItem="lX4-9C-D1t" secondAttribute="bottom" constant="40" id="41u-30-6Qe"/>
+                            <constraint firstItem="KPV-J2-Hzt" firstAttribute="top" secondItem="Xxj-s4-IgR" secondAttribute="bottom" constant="40" id="I5L-Rr-LY4"/>
+                            <constraint firstItem="W4z-ap-CNq" firstAttribute="leading" secondItem="6ju-Q7-bdV" secondAttribute="leadingMargin" constant="30" id="JFQ-9T-Fou"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W4z-ap-CNq" secondAttribute="trailing" constant="30" id="PZx-eK-Aq6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6DK-6s-9zj" secondAttribute="trailing" constant="30" id="Qba-0q-Bek"/>
+                            <constraint firstItem="Xxj-s4-IgR" firstAttribute="leading" secondItem="6ju-Q7-bdV" secondAttribute="leadingMargin" constant="30" id="StR-1Y-fiI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KPV-J2-Hzt" secondAttribute="trailing" constant="30" id="WUe-XD-mR3"/>
+                            <constraint firstItem="Xxj-s4-IgR" firstAttribute="top" secondItem="6DK-6s-9zj" secondAttribute="bottom" constant="40" id="YJJ-ZK-yo4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3yl-1s-WSD" secondAttribute="trailing" constant="30" id="apN-fF-FhN"/>
+                            <constraint firstItem="KPV-J2-Hzt" firstAttribute="leading" secondItem="6ju-Q7-bdV" secondAttribute="leadingMargin" constant="30" id="fg1-7x-Cmc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xxj-s4-IgR" secondAttribute="trailing" constant="30" id="g3k-cq-sui"/>
+                            <constraint firstItem="6DK-6s-9zj" firstAttribute="top" secondItem="W4z-ap-CNq" secondAttribute="bottom" constant="40" id="iwM-HB-P2C"/>
+                            <constraint firstItem="3yl-1s-WSD" firstAttribute="leading" secondItem="6ju-Q7-bdV" secondAttribute="leadingMargin" constant="30" id="mFx-fS-2V3"/>
+                            <constraint firstItem="pQL-r9-nTg" firstAttribute="leading" secondItem="6ju-Q7-bdV" secondAttribute="leadingMargin" constant="30" id="mI0-24-Kjv"/>
+                            <constraint firstItem="3yl-1s-WSD" firstAttribute="top" secondItem="pQL-r9-nTg" secondAttribute="bottom" constant="40" id="oIe-4D-t5S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pQL-r9-nTg" secondAttribute="trailing" constant="30" id="s6R-F2-h5j"/>
+                            <constraint firstItem="6DK-6s-9zj" firstAttribute="leading" secondItem="6ju-Q7-bdV" secondAttribute="leadingMargin" constant="30" id="sDi-T8-2rH"/>
+                            <constraint firstItem="pQL-r9-nTg" firstAttribute="top" secondItem="KPV-J2-Hzt" secondAttribute="bottom" constant="40" id="uHO-Gt-UbN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sN2-N8-eOA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="-479"/>
+        </scene>
+    </scenes>
+</document>
