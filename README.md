@@ -39,7 +39,7 @@ Swift Version For LSAlertController
         self.textColor = textColor
         self.handler = handler;
     }
-
+   还可以自定义container 宽度
 ```
 
 
