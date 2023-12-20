@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         let cancelAction = LSAlertAction.init(title: "大于三个按钮", textColor: UIColor.green) { action in
             print("取消")
         }
-        let threeAction = LSAlertAction.init(title: "就是🌲着排列", textColor: UIColor.green) { action in
+        let threeAction = LSAlertAction.init(title: "就是竖着排列", textColor: UIColor.green) { action in
             print("取消")
         }
         alert.addAction(action: confirmAction)

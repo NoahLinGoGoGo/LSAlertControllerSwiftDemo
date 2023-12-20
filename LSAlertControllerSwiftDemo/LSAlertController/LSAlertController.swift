@@ -74,6 +74,7 @@ class LSAlertController: UIViewController {
         }
     }
     
+    var isFirst:Bool = false
     
     var actionItems: Array<LSAlertAction> = []
     var textFieldItems: Array<UITextField> = []
@@ -117,10 +118,13 @@ class LSAlertController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        if preferredStyle == .actionSheet {
-            setupActionSheetStyleSubViews()
-        } else {
-            setupAlertStyleSubViews()
+        if !isFirst {
+            if preferredStyle == .actionSheet {
+                setupActionSheetStyleSubViews()
+            } else {
+                setupAlertStyleSubViews()
+            }
+
         }
     }
     
@@ -180,7 +184,7 @@ class LSAlertController: UIViewController {
     
     
     func setupActionSheetStyleSubViews()  {
-        
+        isFirst = true
         let actionCount = actionItems.count
         let buttonH: CGFloat = 50.0
         containerH += CGFloat(actionCount) * buttonH
@@ -222,6 +226,7 @@ class LSAlertController: UIViewController {
     
     
     func setupAlertStyleSubViews()  {
+        isFirst = true
         let actionCount = actionItems.count
         let textFieldCount = textFieldItems.count
         let textFieldW: CGFloat = containerW! - margin * 2
